@@ -83,12 +83,6 @@ func DBconn(dbfilepath string) {
 	dbname := config["dbname"]
 	dbname = Trim(dbname)
 
-	fmt.Println("host :", host)
-	fmt.Println("port : ", port)
-	fmt.Println("user :", user)
-	fmt.Println("password :", password)
-	fmt.Println("dbname :", dbname)
-
 	//SQL Kismi
 	psqlInfo := fmt.Sprintf("host=%s port=%d user=%s "+"password=%s dbname=%s sslmode=disable", host, port, user, password, dbname)
 	db, err := sql.Open("postgres", psqlInfo)
