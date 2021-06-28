@@ -1,4 +1,4 @@
-package main
+package psqlconn
 
 import (
 	"bufio"
